@@ -1,18 +1,19 @@
 export default {
-  name: 'author',
+  name: 'speaker',
   type: 'document',
-  title: 'Person',
+  title: 'Speaker',
   fields: [
     {
       name: 'identity',
-      type: 'person'
+      type: 'reference',
+      to: [{type: 'person'}]
     },
 
   ],
   preview: {
     select: {
-      title: 'name',
-      subtitle: 'slug.current',
+
+      title: 'identity.name',
       media: 'image'
     }
   }

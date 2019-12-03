@@ -1,11 +1,12 @@
 export default {
-  name: 'author',
+  name: 'staff',
   type: 'document',
-  title: 'Person',
+  title: 'Staff Member',
   fields: [
     {
       name: 'identity',
-      type: 'person'
+      type: 'reference',
+      to: [{type: 'person'}]
     },
 
   ],

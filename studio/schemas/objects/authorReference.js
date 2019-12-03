@@ -6,17 +6,18 @@ export default {
     {
       name: 'author',
       type: 'reference',
+      title: 'Author',
       to: [
         {
-          type: 'author'
+          type: 'person'
         }
       ]
     }
   ],
   preview: {
     select: {
-      title: 'author.name',
-      media: 'author.image.asset'
+      title: 'person.name',
+      media: 'person.image.asset'
     }
   }
 }
