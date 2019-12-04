@@ -1,8 +1,7 @@
 module.exports = {
-  extends: ['standard', 'standard-react', 'plugin:import/errors', 'plugin:import/warnings'],
+  extends: ['standard', 'standard-react', 'plugin:import/errors', 'plugin:import/warnings', 'eslint-config-prettier'],
   rules: {
     'react/prop-types': 0,
-    'object-curly-spacing': ['error', 'never']
   },
   settings: {
     react: {
