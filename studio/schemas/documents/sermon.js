@@ -25,7 +25,7 @@ export default {
 
       of: [
         {
-          type: 'authorReference',
+          type: 'person',
 
         }
       ],
