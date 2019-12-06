@@ -5,11 +5,14 @@ import {imageUrlFor} from '../lib/image-url'
 import styles from './author-list.module.css'
 
 function AuthorList ({items, title}) {
+  console.log(items);
   return (
     <div className={styles.root}>
       <h2 className={styles.headline}>{title}</h2>
       <ul className={styles.list}>
-        {items.map(({author, _key}) => {
+        {items.map((author) => {
+          console.log(author);
+          const {_key} = author;
           const authorName = author && author.name
           return (
             <li key={_key} className={styles.listItem}>

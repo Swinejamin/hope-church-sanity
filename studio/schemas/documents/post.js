@@ -45,7 +45,10 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'person'
+          type: 'reference',
+          to: {
+            type: 'person'
+          }
         }
       ]
     },
